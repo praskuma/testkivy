@@ -14,9 +14,11 @@ jobs:
       uses: actions/setup-node@v3
       with:
         node-version: '20'
+    - name: Checkout code (if necessary)
+      uses: actions/checkout@v3  # Add this line if you haven't already
 
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v3
       with:
         python-version: '3.x'
 
